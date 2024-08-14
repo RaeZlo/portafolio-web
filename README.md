@@ -14,6 +14,6 @@ La motivación detrás de este proyecto surge de mi necesidad de contar con un e
 - Información personal y profesional claramente presentada.
 
 <h2>Tecnologías Utilizadas</h2>
-- HTML5 y CSS3 para la estructura y el diseño.
 
+- HTML5 y CSS3 para la estructura y el diseño.
 - GitHub Pages para la publicación del portafolio.
