@@ -1,0 +1,293 @@
+/* Estilos generales */
+body {
+    padding: 5% 10%;
+    margin: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: #191825;
+    color: white;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+footer {
+    padding: 30px 0 50px;
+}
+
+/* Sección de presentación */
+.presentacion {
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.presentacion .avatar {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+}
+
+.presentacion .datos-basicos {
+    margin-left: 5%;
+}
+
+.presentacion .datos-basicos h1, .presentacion .datos-basicos h2 {
+    margin: 10px 0;
+}
+
+.presentacion .datos-basicos h1 {
+    font-size: 2.5em;
+}
+
+.presentacion .datos-basicos h2 {
+    font-size: 1.8em;
+}
+
+.presentacion .datos-basicos p {
+    margin: 10px 0;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gmail, .nav-btn, .tec-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.gmail {
+    cursor: pointer;
+    background-color: #865DFF;
+}
+
+.gmail:hover {
+    background-color: #906cfc;
+}
+
+.nav-btn {
+    cursor: pointer;
+    color: #865DFF;
+    border: 1px solid #865DFF;
+}
+
+.tec-btn {
+    background-color: #aa9bd8;
+    color: #865DFF;
+}
+
+.nav-btn i, .tec-btn i {
+    transform: scale(1.5);
+}
+
+/* Sección sobre mí */
+.sobre-mi {
+    padding-bottom: 30px;
+}
+
+.sobre-mi h2 {
+    font-size: x-large;
+}
+
+/* Main */
+main {
+    padding: 30px 0;
+    border-top: solid 0.5px #343149;
+    border-bottom: solid 0.5px #343149;
+}
+
+/* Tecnología */
+#Tecnologías {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.stack {
+    background-color: #191825;
+    color: #865DFF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stack i {
+    font-size: 4em;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+}
+
+.stack h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.stack p {
+    font-size: 1em;
+    color: #b3b3b3;
+    line-height: 1.5;
+}
+
+/* Proyectos */
+.proyecto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 230px; /* Altura fija para uniformidad */
+}
+
+.proyecto-info {
+    padding: 0;
+    width: 60%;
+}
+
+.proyecto-info p {
+    margin: 5px 0;
+}
+
+.tecnologias {
+    margin-top: 10px;
+}
+
+.tec {
+    display: inline-block;
+    background-color: #33354A;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.botones {
+    margin-top: 15px;
+}
+
+.proyecto-img {
+    width: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.proyecto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Selección de texto */
+::selection {
+    background-color: #aa9bd8;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #aa9bd8;
+    color: white;
+}
+
+/* Media Queries */
+@media(max-width: 910px) {
+    .stack {
+        width: 48%;
+    }
+
+    .proyecto-img {
+        width: 45%;
+    }
+}
+
+@media(max-width: 800px) {
+    body {
+        padding: 5% 5%;
+    }
+
+    .proyecto {
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .proyecto-img {
+        width: 50%;
+    }
+}
+
+@media(max-width: 625px) {
+    body {
+        padding: 5% 2%;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion .datos-basicos {
+        margin: 0;
+    }
+
+    #Tecnologías {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stack {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .proyecto {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+
+        .botones {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .proyecto-info, .proyecto-img {
+        width: 100%;
+    }
+
+    .proyecto-info {
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .presentacion .datos-basicos h1 {
+        font-size: 1.8em;
+    }
+    
+    .presentacion .datos-basicos h2 {
+        font-size: 1.5em;
+    }
+
+    .presentacion, footer {
+        .botones {
+            flex-direction: column; /* Cambia la dirección del flex a columna */
+            gap: 10px;
+            align-items: center; /* Centra los botones */
+        }
+    }
+}
